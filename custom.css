@@ -1,1 +1,535 @@
+/* Customisation styles set by John - Changes are noted in list */
+
+/* Change to Rich Text aligment - sitewide */
+.section--text-centered {
+    text-align: left;
+}
+/* Forced Icon size for offer - USP panels */
+.offer-item__image-wrapper {
+    min-width: 86px;
+    max-width: 86px;
+}
+element.style {
+}
+.block-list__item>:first-child {
+    margin: 0 7px 20px;
+    flex: 1 0 0%;
+}
+.offer-item {
+    padding: 5px;
+    background: var(--secondary-background);
+    border: 1px solidvar(--border-color);
+    border-radius: 5px;
+}
+
+.article-item   {
+  background: #F5F5F5;
+  padding: 15px;
+  min-height: 140px;
+  border-radius: 5px;
+  align-content: middle;
+}
+.article-item__title {
+  font-weight: 600;
+  padding-top: 20px;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+/**
+ * --------------------------------------------------------------------
+ * NAVIGATION - MENU BAR.
+ * MARCH 8 - recolourisation of menu bar
+ * --------------------------------------------------------------------
+ */
+.nav-bar {
+  background-color: #141414;
+  margin-top: -30px;
+  height: 70px;
+}
+.nav-bar__link {
+  color: white; 
+}
+.nav-dropdown__link {
+  color: #141414; 
+}
+.nav-dropdown {
+  background: white; 
+}
+
+.mobile-menu__nav-link {
+  color: @141414;
+  padding-left: 10px;
+}
+.header__action-list {
+  padding-right: 10px;  
+}
+/**
+ * --------------------------------------------------------------------
+ * NAVIGATION - CUSTOM COLOUR
+ * --------------------------------------------------------------------
+ */
+.nav-bar__item--activate  {
+    color: #ff4300;
+}
+/**
+ * --------------------------------------------------------------------
+ * filter check box colouring
+ * --------------------------------------------------------------------
+ */
+.checkbox {
+    border: 1px solid #ff4300;
+    background: #141414;
+}
+  /**
+ * --------------------------------------------------------------------
+ * Table Press styling - reduncdant code to be removed
+ * --------------------------------------------------------------------
+ */
+table.tablepress {
+ line-height:1.6;
+}
+table.tablepress tfoot th,
+table.tablepress thead th {
+ background:#ff4300;
+ color:#fff !important;
+ padding:10px
+}
+table.tablepress .sorting:hover,
+table.tablepress .sorting_asc,
+table.tablepress .sorting_desc {
+ background:#ff4300;
+ color:#fff !important
+}
+table.tablepress .tablepress tfoot th,
+table.tablepress .tablepress thead th {
+ color:#262626;
+ color:#000 !important;
+}
+table.tablepress .tablepress tbody td,
+table.tablepress .tablepress tfoot th {
+ border-color:#000;
+}
+table.tablepress .odd td {
+ background:#262626;
+  color:#fff !important;
+}
+
+table.tablepress .even td {
+ background:#141414;
+  color:#fff !important;
+}
+table.tablepress .dataTables_info {
+ padding-top:10px;
+ opacity:0.7
+}
+.dataTables_paginate {
+ padding-top:10px
+}
+.dataTables_paginate.paging_simple {
+ padding:10px 0 0 !important
+}
+.dataTables_paginate.paging_simple .paginate_button.next:after,
+.dataTables_paginate.paging_simple .paginate_button.previous:before {
+ font-family:'ticons';
+ text-shadow:none;
+ color:inherit;
+ position:relative;
+ top:auto;
+ left:auto;
+ right:auto;
+ margin:0;
+ line-height:inherit
+}
+.dataTables_paginate.paging_simple .paginate_button.previous:before {
+ content:"\f137";
+ margin-right:8px
+}
+.dataTables_paginate.paging_simple .paginate_button.next:after {
+ content:"\f138";
+ margin-left:8px
+}
+.dataTables_paginate.paging_simple a {
+ text-decoration:none;
+ color:#555 !important
+}
+.dataTables_paginate.paging_simple .paginate_button.disabled {
+ opacity:0.35
+}
+.dataTables_length,
+.dataTables_filter {
+ height:30px;
+ line-height:30px;
+ margin-bottom:10px
+}
+.dataTables_filter input[type="search"] {
+ height:26px;
+ padding:0 4px
+}
+
+/**
+ * --------------------------------------------------------------------
+ * Product/plan save
+ * --------------------------------------------------------------------
+ */
+.product-item__label-list > .product-label {
+  font-size: 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+.rate-item__inner .product-label--on-sale {
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  font-size: 20px;
+}
+.rate-item__inner {
+  position: relative; 
+}
+@media screen and (max-width: 1000px) {
+  .rate-item__inner .product-label--on-sale {
+    left: -8px;
+  }
+}
+/**
+ * --------------------------------------------------------------------
+ * Search bar
+ * --------------------------------------------------------------------
+ */
+.header__search-bar-wrapper {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__search-bar-wrapper .container {
+  padding: 0;
+}
+.header .search-bar__submit {
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .header__search-bar-wrapper {
+     width: 75%;
+  }
+}
+@media screen and (min-width: 641px) {
+  .header__search-bar-wrapper {
+     width: 50%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header__search-bar-wrapper {
+   	 width: 100%;
+  }
+}
+/**
+ * --------------------------------------------------------------------
+ * Disable for Buy SIM button (flashes to Not Allowed Cursor on Mouseup css.Line 2257)
+ * Added 30/03/21 PC
+ * --------------------------------------------------------------------
+*/
+.button--primary[disabled] {
+  cursor: pointer;
+}
+/**
+ * --------------------------------------------------------------------
+ * Modal Popup
+ *
+ * cutom styles below for the Modal popup
+ * --------------------------------------------------------------------
+ */
+.spinning-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 128px;
+}
+.popup-newsletter {
+  background-color: #ff4300:
+}
+.modal__dialog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    background: #141414;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 30%);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: scale(0.9);
+    transition: transform 0.25s ease-in-out, visibility 0.25s ease-in-out;
+}
+.popup-newsletter__close {
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    color: #ff4300;
+}
+.popup-newsletter__title, .popup-newsletter__content {
+    color: #fff;
+}
+.message-us-popup .modal[aria-hidden=false] {
+  	pointer-events: none; 
+  	/* Make popup won't disappear when click on the outside area */
+}
+/* move the loading modal towards the center of the screen on mobile devices */
+@media screen and (max-width: 640px) {
+  aside.modal.modal--newsletter.messaging-modal {
+      bottom: auto;
+  }
+}
+/* For the banner on the home page 
+#boost-slideshow-id {
+    margin: 0 calc(calc(-100vw + min(100vw * (13/15), 1400px))/2);
+  	margin-top: 0px;
+    min-heights: 500px
+}*/
+#_form_3_._inline-form {
+    width: auto%;
+    padding: 40px;
+}
+.white-box {
+    background: #fff;
+    margin: 40px;
+}
+
+.tab-click-button {
+ 	width: 100%;
+  	height: 100%;
+   	top: 0;
+  	left: 0;
+  	position: absolute;
+  	padding: 0px 2px;
+}
+
+.tab-list-item {
+ 	position: relative;
+	font-size: 12px; 
+}
+.tab-list-container {
+ 	margin-top: -60px;
+    position: relative;
+	font-size: 12px; 
+}
+/* Custom Styles */
+/* Customisation styles set by John - Changes are noted in list */
+
+/* Change to Rich Text aligment - sitewide */
+.section--text-centered {
+    text-align: left;
+}
+/* Padding change to copnsate for "no white boxing"
+YTD will need to establish a more through fix for when we use coloue in-fill on these */
+.promo-block {
+    position: relative;
+    display: flex;
+    min-height: 240px;
+ /*   min-width: 95%;  */
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.promo-block__heading {
+    margin-bottom: 30px;
+    letter-spacing: -1.5px;
+    margin-top: -35px;
+    line-height: 36px;
+    font-size: 32px;
+    font-weight: 700;
+    color: inherit;
+}
+.promo-block__content {
+    font-size: 13px;
+    line-height: 23px;
+    padding-top: 20px;
+}
+.boost-callout-losange {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding: 4px 10px;
+    display: inline-block;
+    contain: 3px;
+    background: #ff4300;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 0px 16px 16px 16px;
+    line-height: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+element.style {
+}
+.nav-bar {
+    background-color: #fff;
+    margin-top: 0px;
+    height: 70px;
+}
+.nav-bar__link {
+    color: #141414;
+}
+.button {
+    min-width: 140px;
+    line-height: 38px;
+    /* Buttons */
+    background: #FF4300;
+    border-radius: 10px 10px 10px 10px;
+}
+
+@media screen and (max-width: 641px)
+ .button {
+  line-height: 38px;
+    font-size: 15ps;
+    /* Buttons */
+    background: #FF4300;
+    border-radius: 10px 10px 10px 10px;
+}
+.h1 {
+    font-family: var(--heading-font-family);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading-font-style);
+    color: var(--heading-color);
+    border-style: solid;
+    border-color: #B6B6B6;
+    border-width: 0px 0px 1px 0px; /* 25px top, 10px right, 4px bottom and 35px left */
+    padding-bottom: 15px;
+    padding-top: 25px;
+}
+.active, .accordion:hover {
+  background-color: #fff; 
+}
+.panel {
+  padding: 0 0px;
+  background-color: white;
+}
+/**
+ * --------------------------------------------------------------------
+ * Animated annoucement bar *
+ * --------------------------------------------------------------------
+ */
+.announcement-bar {
+    padding: 10px;
+    max-height: 40px;
+}
+@media screen and (max-width: 641px)
+.mosaic__item {
+    padding-top: 10px;
+}
+/**
+ * --------------------------------------------------------------------
+ * Divide line addition to section head *
+ * --------------------------------------------------------------------
+ */
+.section__header {
+    border-style: solid;
+    border-color: #B6B6B6;
+    border-width: 0px 0px 1px 0px;
+
+/**
+ * --------------------------------------------------------------------
+ * MOSAIC - change to padding to accomodate larger main lables
+ * --------------------------------------------------------------------
+ */
+.mosaic__item {
+    padding: 0 10px 20px;
+}
+@media screen and (min-width: 641px) {
+.mosaic__item {
+    padding: 0 15px 30px;
+    }
+}
+/**
+ * --------------------------------------------------------------------
+ * PROMO BLOCK ISOLATION TO COLOURED MODUALS
+ * --------------------------------------------------------------------
+ */
+.boost-promo-block {
+    position: relative;
+    display: flex;
+    min-height: 280px;
+    padding: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.boost-promo-block {
+    position: relative;
+    display: flex;
+    min-height: 280px;
+    min-width: 360px;
+    padding: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px;
+}
+.boost-promo-block__heading {
+    margin-bottom: 30px;
+    letter-spacing: -1.5px;
+    margin-top: 40px;
+    line-height: 2px;
+    font-size: 36px;
+    font-weight: 700;
+    color: inherit;
+}
+.heading {
+  color: inherit;
+}
+element.style {
+}
+@media screen and (min-width: 641px)
+.faq__item {
+    padding: 0px 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 3px 3px 0 0;
+}
+.faq__item {
+    padding: 0px;
+    background: var(--secondary-background);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+  /* Style the accordion panel. Note: hidden by default */
+
+.faq__question2 {
+  font-weight: 400;
+  text-align: left;
+  padding-top: 20px;
+  /* divide line */
+  border-top: 0.5px solid #B6B6B6;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+}
+.faq__group-title {
+    padding-left: 30px;
+    padding-bottom: -30px;
+}
+.search-bar.full-width {
+  min-width: 100%;
+}
+
+.product-label--on-sale {
+  border-radius: 0px 10px 10px 10px;
+  width: 100%;
+  height: 26px;
+  margin-left: 20px;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 6px;
+}
+
 
